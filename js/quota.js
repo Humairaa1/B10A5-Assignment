@@ -16,6 +16,9 @@ document.getElementById("quota-donate-btn")
     const updateMyTotalAmount = myTotalAmount - myDonatiion;
     document.getElementById('total-amount').innerText = updateMyTotalAmount;
 
+     // for History sectio
+    setHistory('quota-input','quota-title')
+
     document.getElementById('quota-input').value=" ";
     my_modal_3.showModal();
     

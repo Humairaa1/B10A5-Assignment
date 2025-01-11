@@ -16,6 +16,9 @@ document.getElementById("feni-donate-btn")
     const updateMyTotalAmount = myTotalAmount - myDonatiion;
     document.getElementById('total-amount').innerText = updateMyTotalAmount;
 
+     // for History sectio
+    setHistory('feni-input','feni-title')
+
     document.getElementById('feni-input').value=" ";
     my_modal_2.showModal();
     
