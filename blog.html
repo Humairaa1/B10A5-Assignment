@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-lexend {
+            font-family: "Lexend";
+        }
+    </style>
+
+    <!-- Daisy ui and tailwnd cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav class="flex flex-col md:flex-row justify-between bg-[#F9F7F3] px-20 md:px-32 pt-6 pb-10 gap-4 bg-opacity-90">
+        <button id="home-btn" class="btn bg-[#B4F461] text-xl">Home</button>
+        <div class="flex items-center gap-3">
+            <img src="./assets/logo.png" alt="">
+            <h1 class="text-xl font-semibold">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center gap-2">
+            <img src="./assets/coin.png" alt="">
+            <h4 class="text-xl font-semibold gap-3">
+                <span id="total-amount">5500</span>
+                BDT
+            </h4>
+        </div>
+    </nav>
+    <main class="w-11/12 lg:w-4/5 mx-auto">
+        <h1 class="text-4xl font-bold text-center mt-20">Impotant FAQ</h1>
+        <div class="join join-vertical w-full mt-10">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model is a programming interface that represents the structure of a web page
+                        in a way that programming languages like JavaScript can understand and manipulate.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>To select an element from the DOM in JavaScript, use the document.querySelector() method.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in the DOM where you add an event listener to a parent element
+                        instead of each child element. Event delegation is useful because it enhances performance and
+                        simplifies code by attaching a single event listener to a parent element instead of multiple
+                        listeners to individual child elements. This approach not only reduces memory usage but also
+                        ensures that dynamically added elements are automatically covered without requiring additional
+                        listeners. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>To manipulate an element's attributes and styles using the DOM, you can modify its attributes
+                        such as id, src, or alt using methods like setAttribute to assign values, getAttribute to
+                        retrieve values, and removeAttribute to remove them. For styles, the style property allows you
+                        to directly apply CSS rules like changing color, font size, or background. Additionally, the
+                        classList property is useful for adding, removing, or toggling CSS classes, making it easier to
+                        manage an element's appearance dynamically. These methods enable flexible and efficient updates
+                        to the DOM.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+     <script src="./js/home.js"></script>
+
+</body>
+
+</html>
